@@ -21,9 +21,9 @@ ticket = km * kmPrice;
 console.log(ticket);
 
 if (eta < 18) {
-    ticket = ticket * minorDiscount;
+    ticket = ticket - (ticket * minorDiscount);
 } else if (eta >= 65) {
-    ticket = ticket * overDiscount;
+    ticket = ticket - (ticket * overDiscount);
 }
 console.log(ticket);
 
